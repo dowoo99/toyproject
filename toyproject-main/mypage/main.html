@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+<title>Document</title>
+<style>
+  * {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+
+  .mainWrap {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .title {
+    display: block;
+    font-size: 40px;
+  }
+
+  #wrapHead {
+
+    border-radius: 20px;
+    text-align: center;
+    width: 600px;
+    padding: 20px;
+  }
+
+  .titleBox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .login {
+    width: 15%;
+  }
+
+  #wrapIndex {
+
+    margin-top: 20px;
+    width: 500px;
+    height: 450px;
+  }
+
+  .searchBox {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .texts {
+    font-size: 20px;
+    width: 83%;
+    height: 40px;
+
+  }
+
+  .swiper {
+    margin-top: 50px;
+  }
+
+  .swiper-slide {
+    overflow: hidden;
+  }
+
+  .inputs {
+    margin-left: 10px;
+    width: 15%;
+  }
+
+  .flag {
+    width: 200px;
+  }
+</style>
+
+</head>
+
+<body>
+  <script src="js/app.js"></script>
+  <div class="mainWrap">
+    <div id="wrapHead">
+      <div class="titleBox">
+        <h1 class="title">TITLE</h1>
+        <button class="login button is-info">로그인</button>
+      </div>
+      <div class="searchBox">
+        <input class="texts input is-info" type="text" placeholder="어디로 가시나요?" id="country">
+        <button class="inputs  button is-info" onclick="countryName($('#country').val()); htmlResult()">입력</button>
+      </div>
+    </div>
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+      <div class="swiper-wrapper"></div>
+    </div>
+    <!-- <div class="swiper-button-next"></div> <div
+        class="swiper-button-prev"></div> <div class="swiper-pagination"></div> -->
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      zoom: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      }
+    });
+  </script>
+  </div>
+</body>
+
+</html>

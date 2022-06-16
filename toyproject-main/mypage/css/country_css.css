@@ -1,0 +1,99 @@
+body {
+    background-color: rgb(228, 228, 228)
+}
+
+.pageWarp {
+    position: relative;
+    width: 600px;
+    height: 100vh;
+    margin: 0 auto;
+    background: #fff;
+    z-index: 1;
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.loginArea {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.modal {
+    width: 560px;
+    height: 100%;
+    transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+    top: 50%;
+    position: fixed;
+    background-color: beige;
+    border-radius: 40px;
+    padding: 30px 20px;
+    box-shadow: 0px -5px blur ;
+}
+
+.modal h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.modal ul li{
+    margin-bottom: 20px;
+}
+
+.flagArea {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+
+.flagArea ul {
+    list-style-type: none;
+}
+
+.flagArea ul li {
+    padding: 33% 0;
+}
+
+.container.modal-open .modal {
+    top: 20%;
+}
+/* 버튼 */
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    justify-content: center;
+    padding: calc(0.5em - 1px) 1em;
+    text-align: center;
+    height: 40px;
+    white-space: nowrap;
+    border-radius: 4px;
+    background-color: #3e8ed0;
+    color: #fff;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #3488ce;
+}
+
+/* 즐겨찾기 */
+.favorites {
+    padding: 0;
+    background : transparent;
+    border: none;
+}
+
+.favorites img {
+    width: 50px;
+}

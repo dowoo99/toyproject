@@ -1,0 +1,57 @@
+.wrap {
+  max-width: 600px;
+  overflow: hidden;
+  background-color: bisque;
+  margin: 0 auto;
+}
+
+::-ms-overflow-styl {
+  display: none;
+}
+
+.wrap>p1 {
+  margin: 30px 0 20px 20px;
+  background-color: blue;
+  font-size: 40px;
+  display: block;
+
+}
+
+.swipper {
+  width: 100%;
+  height: 700px;
+  overflow: scroll;
+  color: wheat;
+  margin: 20px;
+  -ms-overflow-style: none;
+
+}
+
+.swipper::-webkit-scrollbar {
+  display: none;
+}
+
+.swipper_box {
+  min-width: 600px;
+  height: 250px;
+  margin-bottom: 20px;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+}
+
+.flag {
+  width: 300px;
+  height: 250px;
+  background-color: black;
+}
+
+.star {
+  width: 50px;
+  height: 50px;
+  background-color: blueviolet;
+  margin-left: 200px;
+
+}
