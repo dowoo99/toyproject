@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="pageWarp">
+        <div class="container">
+            <div class="videoArea">
+                <video src="https://vod-progressive.akamaized.net/exp=1655562976~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4497%2F6%2F172488192%2F556474949.mp4~hmac=b30e4b3b06390a611c1d770904ea8f9c97df3503812c4dddf11a6cf90854e079/vimeo-prod-skyfire-std-us/01/4497/6/172488192/556474949.mp4?filename=Coastline+-+3581.mp4" muted autoplay loop></video>
+            </div>
+            <div class="searchBox">
+                <input class="texts" type="text" placeholder="어디로 가시나요?" id="country">
+                <span class="btn material-symbols-outlined" onclick="countryName($('#country').val())">search</span>
+            </div>
+            <div class="header js-close-modal">
+                <h1>Country</h1>
+            </div>
+            <div class="infoArea">
+
+            </div>
+            <div class="modal js-click-modal">
+                <h2 class="header2">경보리스트</h2>
+                <ul class="body">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/import.js"></script>
+</body>
+
+</html>
